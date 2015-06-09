@@ -1,6 +1,8 @@
 *.py[cod]
+*.webassets*
 
 /app/venv/*
+/gen/*
 /.idea/workspace.xml
 
 

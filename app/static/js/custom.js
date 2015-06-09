@@ -193,30 +193,30 @@ jQuery(document).ready(function($) {
 	});
 
 /*jFlickr*/
-	$('.jflickr').jFlickr({
-		pictures: 6,
-		flickrId: '51035555243@N01',
-		tags: 'nevada',
-		grabSize: 'auto',
-		width: 64,
-		height: 64
-	});
-	
+//	$('.jflickr').jFlickr({
+//		pictures: 6,
+//		flickrId: '51035555243@N01',
+//		tags: 'nevada',
+//		grabSize: 'auto',
+//		width: 64,
+//		height: 64
+//	});
+
 /*jTweet*/
-	$(".tweet").tweet({
-		count: 1,
-		username: ["envato"],
-		loading_text: "= Loading tweets =",
-		refresh_interval: 60
-	});
+//	$(".tweet").tweet({
+//		count: 1,
+//		username: ["envato"],
+//		loading_text: "= Loading tweets =",
+//		refresh_interval: 60
+//	});
 
 /*jTweet in Sidebar and Footer*/
-	$(".tweet1").tweet({
-		count: 3,
-		username: ["envato"],
-		loading_text: "Loading tweets...",
-		refresh_interval: 60
-	});
+//	$(".tweet1").tweet({
+//		count: 3,
+//		username: ["envato"],
+//		loading_text: "Loading tweets...",
+//		refresh_interval: 60
+//	});
 
 /*Tabs*/
 	$('.tabs').tabs({
@@ -283,7 +283,7 @@ jQuery(document).ready(function($) {
 	});
 
 /*jMapping*/
-	$('#map').jMapping({
-		default_zoom_level: 3
-	});
+//	$('#map').jMapping({
+//		default_zoom_level: 3
+//	});
 });

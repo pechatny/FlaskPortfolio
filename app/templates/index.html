@@ -29,7 +29,12 @@
         <script type="text/javascript" src="{{ ASSET_URL }}"></script>
     {% endassets %}
 
-	<!--[if IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" /><![endif]-->
+    <script type="text/javascript" src="/static/js/nivo/jquery.nivo.slider.pack.js"></script>
+
+    {% assets "js_all2" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
 </head>
 
 <body>
@@ -128,10 +133,8 @@
                     <img src="{{ url_for('static', filename='images/content/slide1.jpg') }}" alt="" title="#htmlcaption">
                     <img src="{{ url_for('static', filename='images/content/slide2.jpg') }}" alt="" title="#htmlcaption1">
                     <img src="{{ url_for('static', filename='images/content/slide3.jpg') }}" alt="" title="#htmlcaption2">
-
-
                 <div id="htmlcaption" class="nivo-html-caption">
-                    <span>At vero eos et accusamus et iusto odio dignissimos</span><a href="#"></a>
+                    <span>Картинка 1</span><a href="#"></a>
                 </div>
 
                 <div id="htmlcaption1" class="nivo-html-caption">
@@ -151,13 +154,15 @@
 
 <!-- RECENT WORK -->
 
-                <span>Recent Work<img src="images/dot.gif" alt=""><a href="portfolio.html">All Projects</a></span>
+                <span>Recent Work<img src="{{ url_for('static', filename='images/dot.gif') }}" alt=""><a href="portfolio.html">All Projects</a></span>
             </div>
 
             <ul id="portfolio" class="inner-960 bottom-15 clearfix">
                 <li class="col1-4">
                     <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-1.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-1.jpg" alt=""></div>
+                        <div class="proj-img">
+                            <a href="{{ url_for('static', filename='images/content/img220x146-1.jpg') }}" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a>
+                            <img src="{{ url_for('static', filename='images/content/img220x146-1.jpg') }}" alt=""></div>
 
                         <div class="proj-info">
                             <h4><a href="#">Ut enim ad minima veniam</a></h4>
@@ -169,7 +174,9 @@
 
                 <li class="col1-4">
                     <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-2.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-2.jpg" alt=""></div>
+                        <div class="proj-img"><a href="{{ url_for('static', filename='images/content/img220x146-2.jpg') }}" class="prettyPhoto zoom"></a>
+                            <a href="portfolio-single.html"></a>
+                            <img src="{{ url_for('static', filename='images/content/img220x146-2.jpg') }}" alt=""></div>
 
                         <div class="proj-info">
                             <h4><a href="#">Consectetur adipisicing elit</a></h4>
@@ -181,8 +188,9 @@
 
                 <li class="col1-4">
                     <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-3.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-3.jpg" alt=""></div>
-
+                        <div class="proj-img"><a href="{{ url_for('static', filename='images/content/img220x146-3.jpg') }}" class="prettyPhoto zoom"></a>
+                            <a href="portfolio-single.html"></a>
+                            <img src="{{ url_for('static', filename='images/content/img220x146-3.jpg') }}" alt=""></div>
                         <div class="proj-info">
                             <h4><a href="#">Vel illum qui dolorem</a></h4>
 
@@ -193,7 +201,10 @@
 
                 <li class="col1-4">
                     <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-4.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-4.jpg" alt=""></div>
+                        <div class="proj-img"><a href="images/content/img220x146-4.jpg" class="prettyPhoto zoom"></a>
+                            <a href="portfolio-single.html"></a>
+
+                            <img src="{{ url_for('static', filename='images/content/img220x146-4.jpg') }}" alt=""></div>
 
                         <div class="proj-info">
                             <h4><a href="#">Quis nostrum exercitationem</a></h4>
@@ -204,8 +215,10 @@
                 </li>
 
                 <li class="col1-4">
-                    <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-5.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-5.jpg" alt=""></div>
+                    <div class="project">{{ url_for('static', filename='images/content/img220x146-5.jpg') }}
+                        <div class="proj-img"><a href="{{ url_for('static', filename='images/content/img220x146-5.jpg') }}" class="prettyPhoto zoom"></a>
+                            <a href="portfolio-single.html"></a>
+                            <img src="{{ url_for('static', filename='images/content/img220x146-5.jpg') }}" alt=""></div>
 
                         <div class="proj-info">
                             <h4><a href="#">Ut enim ad minima veniam</a></h4>
@@ -217,7 +230,9 @@
 
                 <li class="col1-4">
                     <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-6.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-6.jpg" alt=""></div>
+                        <div class="proj-img"><a href="{{ url_for('static', filename='images/content/img220x146-6.jpg') }}" class="prettyPhoto zoom"></a>
+                            <a href="portfolio-single.html"></a>
+                            <img src="{{ url_for('static', filename='images/content/img220x146-6.jpg') }}" alt=""></div>
 
                         <div class="proj-info">
                             <h4><a href="#">Consectetur adipisicing elit</a></h4>
@@ -229,7 +244,9 @@
 
                 <li class="col1-4">
                     <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-7.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-7.jpg" alt=""></div>
+                        <div class="proj-img"><a href="{{ url_for('static', filename='images/content/img220x146-7.jpg') }}" class="prettyPhoto zoom"></a>
+                            <a href="portfolio-single.html"></a>
+                            <img src="{{ url_for('static', filename='images/content/img220x146-7.jpg') }}" alt=""></div>
 
                         <div class="proj-info">
                             <h4><a href="#">Vel illum qui dolorem</a></h4>
@@ -241,7 +258,9 @@
 
                 <li class="col1-4">
                     <div class="project">
-                        <div class="proj-img"><a href="images/content/img220x146-8.jpg" class="prettyPhoto zoom"></a> <a href="portfolio-single.html"></a> <img src="images/content/img220x146-8.jpg" alt=""></div>
+                        <div class="proj-img"><a href="{{ url_for('static', filename='images/content/img220x146-8.jpg') }}" class="prettyPhoto zoom"></a>
+                            <a href="portfolio-single.html"></a>
+                            <img src="{{ url_for('static', filename='images/content/img220x146-8.jpg') }}" alt=""></div>
 
                         <div class="proj-info">
                             <h4><a href="#">Quis nostrum exercitationem</a></h4>
@@ -259,7 +278,7 @@
 <!-- LATEST FROM THE BLOG -->
 
             <div class="divider-text bottom-50">
-                <span>Latest From The Blog<img src="images/dot.gif" alt=""><a href="blog.html">All Posts</a></span>
+                <span>Latest From The Blog<img src="{{ url_for('static', filename='images/dot.gif') }}" alt=""><a href="blog.html">All Posts</a></span>
             </div>
 
             <ul id="recent-posts" class="inner-960 clearfix">
@@ -324,7 +343,7 @@
         <div class="open-close clearfix">
             <a href="#"></a>
         </div>
-
+        </div>
 <!-- FOOTER -->
 
         <div class="footer-wrap">
@@ -395,6 +414,6 @@
     <div class="dark-line">
         <a href="#" class="totop"></a>
     </div>
-    </div>
+
 </body>
 </html>
