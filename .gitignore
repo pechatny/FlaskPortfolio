@@ -2,7 +2,7 @@
 *.webassets*
 
 /app/venv/*
-/gen/*
+/app/static/gen/*
 /.idea/workspace.xml
 
 
