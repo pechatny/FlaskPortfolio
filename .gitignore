@@ -1,2 +1,6 @@
+*.py[cod]
+
 /app/venv/*
 /.idea/workspace.xml
+
+
