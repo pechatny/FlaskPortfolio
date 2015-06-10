@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+	Theme Name: Poise
+	Description: HTML/CSS Template
+	Author: fireform 
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+	
+	Designed & Coded by Fireform
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+-->
+
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+    {% assets "css_all" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}" type="text/css">
+    {% endassets %}
+
+    {% assets "js_all" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+    <script type="text/javascript" src="/static/js/nivo/jquery.nivo.slider.pack.js"></script>
+
+    {% assets "js_all2" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+</head>
+
+<body>
+
+	<div class="theme-changer-wrap">
+		<div class="theme-changer">
+			<div class="changer-inner">
+				<span>Color schemes</span>
+				<div id="stylesw">
+				<a href="#" rel="styles1" class="color-themes col1" id="styles1"></a>
+				<a href="#" rel="styles2" class="color-themes col2" id="styles2"></a>
+				<a href="#" rel="styles3" class="color-themes col3" id="styles3"></a>
+				<a href="#" rel="styles4" class="color-themes col4" id="styles4"></a>
+				<a href="#" rel="styles5" class="color-themes col5" id="styles5"></a>
+				<a href="#" rel="styles6" class="color-themes col6" id="styles6"></a>
+				<a href="#" rel="styles7" class="color-themes col7" id="styles7"></a>
+				<a href="#" rel="styles8" class="color-themes col8" id="styles8"></a>
+				</div>
+				<div class="clear"></div>
+				<span style="margin-top:15px">Patterns</span>
+				<a href="#" class="pat" id="pat1" title="Chains"></a>
+				<a href="#" class="pat" id="pat2" title="China tile"></a>
+				<a href="#" class="pat" id="pat3" title="Cilinders"></a>
+				<a href="#" class="pat" id="pat4" title="Egypt waves"></a>
+				<a href="#" class="pat" id="pat5" title="Garden"></a>
+				<a href="#" class="pat" id="pat6" title="Meteors"></a>
+				<a href="#" class="pat" id="pat7" title="Rain"></a>
+				<a href="#" class="pat" id="pat8" title="Turtle"></a>
+				<div class="clear"></div>
+				<span style="margin-top:15px">Background image</span>
+				<a href="#" id="backgr-image" class="pat"></a>
+			</div>
+		</div>
+		<div class="open-close-demo"></div>
+	</div>
+
+<!-- HEADER -->
+
+    <div class="dark-line"></div>
+
+    <div id="wrapper">
+    
+<!-- NAVIGATION MENU -->
+
+        <ul class="menu">
+            <li><a class="curr" href="index.html">Home</a></li>
+
+            <li>
+                <a class="drop" href="team.html">About</a>
+
+                <ul>
+                    <li><a href="team.html">Our team</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="clients.html">Clients</a></li>
+                </ul>
+            </li>
+            
+			<li><a href="full-width.html">Full width</a></li>
+
+            <li>
+            	<a class="drop" href="portfolio.html">portfolio</a>
+            	<ul>
+                    <li><a href="portfolio.html">4 column portfolio</a></li>
+
+                    <li><a href="portfolio1.html">3 column portfolio</a></li>
+
+                    <li><a href="portfolio2.html">2 column portfolio</a></li>
+            	</ul>
+            </li>
+
+            <li><a href="blog.html">Blog</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="inner clearfix">
+            <div class="clearfix bottom-35">
+
+<!-- LOGO AND DESCRIPTION -->
+
+                <a href="index.html" class="alignleft"><img src="{{ url_for('static', filename='images/content/logo.png') }}" alt=""></a>
+
+                <div class="description">
+                    <h1>Bringing elegance, style, etiquette and class back into vogue.</h1>
+
+                    <p>To attract good fortune, spend a new coin on an old friend, share an old pleasure with a new friend, and lift up the heart of a true friend by writing his name on the wings of a dragon.</p>
+                </div>
+            </div>
+{% block content %}
+
+{% endblock %}
+<!-- FOOTER -->
+
+        <div class="footer-wrap">
+            <div id="footer">
+                <div class="clearfix">
+                    <div class="col1-4 widget_links bottom-20">
+                        <h5>Blogroll</h5>
+
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+
+                            <li><a href="#">Plugins</a></li>
+
+                            <li><a href="#">Suggest Ideas</a></li>
+
+                            <li><a href="#">Support Forum</a></li>
+
+                            <li><a href="#">Themes</a></li>
+
+                            <li><a href="#">WordPress Blog</a></li>
+
+                            <li><a href="#">WordPress Planet</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col1-4 widget_text bottom-20">
+                        <h5>Twitter feed</h5>
+
+                        <div class="tweet1"></div>
+                    </div>
+
+                    <div class="col1-4 widget_categories bottom-20">
+                        <h5>Categories</h5>
+
+                        <ul>
+                            <li><a href="#">Accusamus</a></li>
+
+                            <li><a href="#">Odio</a></li>
+
+                            <li><a href="#">Dignissimos</a></li>
+
+                            <li><a href="#">Praesentium</a></li>
+
+                            <li><a href="#">Voluptatum</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col1-4 widget_flickr bottom-20">
+                        <h5>Flickr Feed</h5>
+
+                        <div class="jflickr"></div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+            </div>
+
+            <div class="copyrigts clearfix">
+                <span class="owner">Copyright 2012 = Poise = by <a href="http://themeforest.net/user/fireform?ref=fireform">Fireform</a> All rights reserved</span>
+
+                <div class="social">
+                    <a href="#" class="twitter"></a> <a href="#" class="facebook"></a> <a href="#" class="forrstr"></a> <a href="#" class="dribbble"></a> <a href="#" class="flickr"></a> <a href="#" class="vimeo"></a> <a href="#" class="linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dark-line">
+        <a href="#" class="totop"></a>
+    </div>
+
+</body>
+</html>
